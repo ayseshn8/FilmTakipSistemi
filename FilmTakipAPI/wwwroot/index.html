@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmTakipAPI - Proje Yönetim Paneli</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i class="fa-solid fa-film logo-icon"></i>
+                <div class="logo-text">
+                    <span class="logo-title">FilmTakip</span>
+                    <span class="logo-subtitle">PROJE YÖNETİMİ</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <a href="#dashboard" class="nav-item active" id="btn-dashboard">
+                    <i class="fa-solid fa-chart-pie"></i> Kontrol Paneli
+                </a>
+                <a href="#movies" class="nav-item" id="btn-movies">
+                    <i class="fa-solid fa-clapperboard"></i> Film Takip Sistemi
+                </a>
+                <a href="#gantt" class="nav-item" id="btn-gantt">
+                    <i class="fa-solid fa-timeline"></i> Gantt Şemaları
+                </a>
+                <a href="#budget" class="nav-item" id="btn-budget">
+                    <i class="fa-solid fa-wallet"></i> Bütçe & Finans
+                </a>
+                <a href="#tasks" class="nav-item" id="btn-tasks">
+                    <i class="fa-solid fa-tasks"></i> Görevler & Ekip
+                </a>
+                <a href="#reports" class="nav-item" id="btn-reports">
+                    <i class="fa-solid fa-file-invoice-dollar"></i> Raporlar
+                </a>
+                <a href="#project-info" class="nav-item" id="btn-info">
+                    <i class="fa-solid fa-circle-info"></i> Metodoloji & SSS
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <span class="version-tag">Versiyon 1.1.0</span>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="header-left">
+                    <h1 id="page-title">Kontrol Paneli</h1>
+                    <p class="header-desc" id="page-desc">Projenizin genel ilerleme durumu ve finansal sağlığı.</p>
+                </div>
+                <div class="header-right">
+                    <div class="time-badge">
+                        <i class="fa-regular fa-clock"></i>
+                        <span id="current-time">Yükleniyor...</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Section -->
+            <section id="sec-dashboard" class="content-section active">
+                <!-- Top Metrics Row -->
+                <div class="metrics-grid">
+                    <!-- Completion Card -->
+                    <div class="metric-card glass">
+                        <div class="card-header">
+                            <h3>Proje İlerleme Oranı</h3>
+                            <i class="fa-solid fa-circle-nodes icon-blue"></i>
+                        </div>
+                        <div class="completion-container">
+                            <div class="progress-circle-wrapper">
+                                <svg class="progress-circle" viewBox="0 0 100 100">
+                                    <circle class="progress-circle-bg" cx="50" cy="50" r="40"></circle>
+                                    <circle class="progress-circle-bar" cx="50" cy="50" r="40" id="dash-circle-progress"></circle>
+                                </svg>
+                                <div class="progress-text">
+                                    <span class="percentage" id="dash-text-progress">0%</span>
+                                    <span class="subtext">Tamamlandı</span>
+                                </div>
+                            </div>
+                            <div class="completion-details">
+                                <div class="detail-item">
+                                    <span class="label">Biten Kısım:</span>
+                                    <span class="val text-success" id="dash-completed-percent">0%</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="label">Kalan Kısım:</span>
+                                    <span class="val text-warning" id="dash-remaining-percent">100%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Budget Summary Card -->
+                    <div class="metric-card glass">
+                        <div class="card-header">
+                            <h3>Bütçe Özeti</h3>
+                            <i class="fa-solid fa-dollar-sign icon-green"></i>
+                        </div>
+                        <div class="budget-dashboard-summary">
+                            <div class="kpi-amount">
+                                <span class="label">Net Bütçe Durumu</span>
+                                <span class="amount" id="dash-net-budget">0.00 ₺</span>
+                            </div>
+                            <div class="budget-mini-bar">
+                                <div class="mini-bar-fill" id="dash-budget-bar" style="width: 0%;"></div>
+                            </div>
+                            <div class="budget-legend">
+                                <div>
+                                    <span class="legend-dot spent"></span>
+                                    <span class="legend-label">Harcanan: <strong id="dash-spent-budget">0 ₺</strong></span>
+                                </div>
+                                <div>
+                                    <span class="legend-dot planned"></span>
+                                    <span class="legend-label">Planlanan: <strong id="dash-planned-budget">0 ₺</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Critical Path Mini Card -->
+                    <div class="metric-card glass">
+                        <div class="card-header">
+                            <h3>Kritik Yol Analizi</h3>
+                            <i class="fa-solid fa-route icon-red"></i>
+                        </div>
+                        <div class="critical-dashboard-summary">
+                            <div class="kpi-amount">
+                                <span class="label">Kritik Görev Sayısı</span>
+                                <span class="amount text-danger" id="dash-critical-count">0</span>
+                            </div>
+                            <p class="critical-alert-text" id="dash-critical-desc">
+                                Proje bitiş tarihini doğrudan etkileyen kritik yol görevleri.
+                            </p>
+                            <div class="critical-mini-list" id="dash-critical-list">
+                                <!-- Dynamic List -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle Content: Kanban Overview -->
+                <div class="dashboard-kanban glass">
+                    <div class="section-title-area">
+                        <h2>Görev Durumları (Kanban)</h2>
+                        <span class="badge" id="dash-total-tasks">0 Görev</span>
+                    </div>
+                    <div class="kanban-board">
+                        <div class="kanban-column" id="col-todo">
+                            <div class="column-header">
+                                <span class="dot todo"></span>
+                                <h4>Yapılacaklar</h4>
+                                <span class="count" id="count-todo">0</span>
+                            </div>
+                            <div class="kanban-cards" id="cards-todo">
+                                <!-- Cards -->
+                            </div>
+                        </div>
+                        <div class="kanban-column" id="col-inprogress">
+                            <div class="column-header">
+                                <span class="dot inprogress"></span>
+                                <h4>Devam Edenler</h4>
+                                <span class="count" id="count-inprogress">0</span>
+                            </div>
+                            <div class="kanban-cards" id="cards-inprogress">
+                                <!-- Cards -->
+                            </div>
+                        </div>
+                        <div class="kanban-column" id="col-done">
+                            <div class="column-header">
+                                <span class="dot done"></span>
+                                <h4>Tamamlananlar</h4>
+                                <span class="count" id="count-done">0</span>
+                            </div>
+                            <div class="kanban-cards" id="cards-done">
+                                <!-- Cards -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Movies Section (Film Takip Sistemi) -->
+            <section id="sec-movies" class="content-section">
+                <div class="reports-header-card glass">
+                    <div class="report-meta">
+                        <h2>Film Takip Sistemi (Film Kütüphanesi)</h2>
+                        <p>Sisteminizdeki filmleri görüntüleyin, puanlayın, yeni film ekleyin veya düzenleyin.</p>
+                    </div>
+                    <button class="btn btn-primary" id="btn-add-movie-modal">
+                        <i class="fa-solid fa-circle-plus"></i> Yeni Film Ekle
+                    </button>
+                </div>
+
+                <!-- Movie Search & Filter -->
+                <div class="tab-navigation glass" style="margin-bottom: 24px; padding: 12px; gap: 16px;">
+                    <div class="input-with-icon" style="flex-grow: 1;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" id="movie-search" placeholder="Film adı veya türüne göre ara..." style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-glass);">
+                    </div>
+                    <select id="movie-genre-filter" style="width: 200px; background: rgba(0,0,0,0.3); border: 1px solid var(--border-glass); color: #ffffff; padding: 10px; border-radius: var(--radius-sm); outline:none;">
+                        <option value="">Tüm Türler</option>
+                        <option value="Bilim Kurgu">Bilim Kurgu</option>
+                        <option value="Aksiyon">Aksiyon</option>
+                        <option value="Dram">Dram</option>
+                        <option value="Suç">Suç</option>
+                        <option value="Macera">Macera</option>
+                    </select>
+                </div>
+
+                <!-- Movies Grid -->
+                <div class="movies-grid-container" id="movies-grid">
+                    <!-- Dynamic Movie Cards -->
+                </div>
+            </section>
+
+            <!-- Gantt Charts Section -->
+            <section id="sec-gantt" class="content-section">
+                <!-- Gantt Navigation Tabs -->
+                <div class="tab-navigation glass">
+                    <button class="tab-btn active" id="tab-gantt-task">
+                        <i class="fa-solid fa-list-check"></i> Göreve Göre Gantt Şeması
+                    </button>
+                    <button class="tab-btn" id="tab-gantt-member">
+                        <i class="fa-solid fa-users"></i> Ekip Üyelerine Göre Gantt Şeması
+                    </button>
+                </div>
+
+                <!-- Gantt View Containers -->
+                <div class="gantt-card glass">
+                    <div class="gantt-header-control">
+                        <h2 id="gantt-title">Göreve Göre Proje Zaman Çizelgesi</h2>
+                        <p class="desc-text">Görev başlangıç, bitiş ve ilerleme durumlarının takvimsel gösterimi.</p>
+                    </div>
+                    
+                    <!-- Gantt Wrapper -->
+                    <div class="gantt-outer-container">
+                        <div class="gantt-timeline-header" id="gantt-timeline-months">
+                            <!-- Dynamic Months/Days Header -->
+                        </div>
+                        <div class="gantt-rows-container" id="gantt-rows">
+                            <!-- Dynamic Gantt Bars -->
+                        </div>
+                    </div>
+
+                    <div class="gantt-legend-info">
+                        <span class="legend-item"><span class="legend-color done"></span> Bitti (%100)</span>
+                        <span class="legend-item"><span class="legend-color ip"></span> Devam Ediyor</span>
+                        <span class="legend-item"><span class="legend-color todo"></span> Yapılacak</span>
+                        <span class="legend-item"><span class="legend-color crit"></span> Kritik Yol Görevi</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Budget Section -->
+            <section id="sec-budget" class="content-section">
+                <!-- Budget KPI Cards -->
+                <div class="metrics-grid">
+                    <div class="metric-card glass">
+                        <div class="card-header">
+                            <h3>Planlanan Bütçe</h3>
+                            <i class="fa-solid fa-calculator icon-blue"></i>
+                        </div>
+                        <div class="kpi-amount">
+                            <span class="amount" id="budget-planned-kpi">0.00 ₺</span>
+                            <span class="label">Proje Başlangıç Planlaması</span>
+                        </div>
+                    </div>
+                    <div class="metric-card glass">
+                        <div class="card-header">
+                            <h3>Harcanan / Gider</h3>
+                            <i class="fa-solid fa-receipt icon-red"></i>
+                        </div>
+                        <div class="kpi-amount">
+                            <span class="amount text-danger" id="budget-spent-kpi">0.00 ₺</span>
+                            <span class="label">Görev Maliyetleri Toplamı</span>
+                        </div>
+                    </div>
+                    <div class="metric-card glass">
+                        <div class="card-header">
+                            <h3>Kalan / Net Bütçe</h3>
+                            <i class="fa-solid fa-piggy-bank icon-green"></i>
+                        </div>
+                        <div class="kpi-amount">
+                            <span class="amount text-success" id="budget-net-kpi">0.00 ₺</span>
+                            <span class="label">Kullanılabilir Kaynak</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget Details and Editing Form -->
+                <div class="budget-panel-grid">
+                    <!-- Cost Analysis Table -->
+                    <div class="budget-table-card glass">
+                        <div class="panel-header">
+                            <h2>Görev Bazlı Gider Dağılımı</h2>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>Görev Adı</th>
+                                        <th>Sorumlu</th>
+                                        <th>İlerleme</th>
+                                        <th>Maliyet / Gider</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="budget-costs-table">
+                                    <!-- Dynamic rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Budget Update Card -->
+                    <div class="budget-form-card glass">
+                        <div class="panel-header">
+                            <h2>Planlanan Bütçeyi Güncelle</h2>
+                        </div>
+                        <form id="form-update-budget" class="custom-form">
+                            <div class="form-group">
+                                <label for="input-planned-budget">Yeni Planlanan Bütçe (₺)</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-turkish-lira-sign"></i>
+                                    <input type="number" id="input-planned-budget" required min="0">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="input-spent-budget">Ek Gider / Sabit Harcamalar (₺)</label>
+                                <div class="input-with-icon">
+                                    <i class="fa-solid fa-receipt"></i>
+                                    <input type="number" id="input-spent-budget" required min="0">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fa-solid fa-floppy-disk"></i> Bütçeyi Kaydet
+                            </button>
+                        </form>
+                        <div class="budget-warning-alert mt-4">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <p>Bütçe limitinin %90'ı aşıldığında sistem otomatik uyarı üretecektir. Görev maliyetlerini optimize etmeyi unutmayınız.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tasks & Team Section -->
+            <section id="sec-tasks" class="content-section">
+                <!-- Tabs for Tasks or Team Management -->
+                <div class="tasks-management-grid">
+                    <!-- Tasks Management Card -->
+                    <div class="management-card glass">
+                        <div class="panel-header-action">
+                            <h2>Görev Yönetimi</h2>
+                            <button class="btn btn-primary btn-sm" id="btn-add-task-modal">
+                                <i class="fa-solid fa-plus"></i> Yeni Görev Ekle
+                            </button>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>Görev Başlığı</th>
+                                        <th>Süreç Tarihleri</th>
+                                        <th>Durum</th>
+                                        <th>İlerleme</th>
+                                        <th>Sorumlu</th>
+                                        <th>Bolluk</th>
+                                        <th>Maliyet</th>
+                                        <th>Aksiyon</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tasks-table-body">
+                                    <!-- Dynamic Rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Team Management Card -->
+                    <div class="management-card glass">
+                        <div class="panel-header-action">
+                            <h2>Ekip Üyeleri</h2>
+                            <button class="btn btn-secondary btn-sm" id="btn-add-member-modal">
+                                <i class="fa-solid fa-user-plus"></i> Üye Ekle
+                            </button>
+                        </div>
+                        <div class="table-wrapper">
+                            <table class="custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>Ad Soyad</th>
+                                        <th>Rol / Görev Alanı</th>
+                                        <th>Aksiyon</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="members-table-body">
+                                    <!-- Dynamic Rows -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reports & Analytics Section -->
+            <section id="sec-reports" class="content-section">
+                <div class="reports-header-card glass">
+                    <div class="report-meta">
+                        <h2>Proje Rapor Çıktısı Jeneratörü</h2>
+                        <p>Aşağıda projenin mevcut durumu, bütçe raporu ve ekip yükü özetlenmiştir. Yazdır butonu ile temiz bir çıktı alabilirsiniz.</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="window.print()">
+                        <i class="fa-solid fa-print"></i> Raporu Yazdır / PDF Kaydet
+                    </button>
+                </div>
+
+                <!-- Printable Report Box -->
+                <div class="printable-report glass" id="report-print-area">
+                    <div class="report-watermark">FilmTakip API</div>
+                    <div class="report-header-print">
+                        <div class="report-logo">
+                            <i class="fa-solid fa-film"></i>
+                            <span>FilmTakipAPI Proje Yönetim Raporu</span>
+                        </div>
+                        <div class="report-date" id="report-generation-date">Tarih: 11.06.2026</div>
+                    </div>
+
+                    <div class="report-section">
+                        <h3 class="report-sec-title">1. Proje Genel İlerleme Özeti</h3>
+                        <div class="report-summary-flex">
+                            <div class="summary-box">
+                                <span class="lbl">Tamamlanma Oranı:</span>
+                                <span class="val" id="rep-completion-rate">0%</span>
+                            </div>
+                            <div class="summary-box">
+                                <span class="lbl">Kritik Görev Sayısı:</span>
+                                <span class="val text-danger" id="rep-critical-count">0</span>
+                            </div>
+                            <div class="summary-box">
+                                <span class="lbl">Toplam Görev Sayısı:</span>
+                                <span class="val" id="rep-total-tasks">0</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-section">
+                        <h3 class="report-sec-title">2. Net Bütçe ve Finansal Durum Raporu</h3>
+                        <div class="report-summary-flex">
+                            <div class="summary-box">
+                                <span class="lbl">Planlanan Bütçe:</span>
+                                <span class="val" id="rep-planned-budget">0.00 ₺</span>
+                            </div>
+                            <div class="summary-box">
+                                <span class="lbl">Harcanan Giderler:</span>
+                                <span class="val text-danger" id="rep-spent-budget">0.00 ₺</span>
+                            </div>
+                            <div class="summary-box">
+                                <span class="lbl">Net Kalan Bütçe:</span>
+                                <span class="val text-success" id="rep-net-budget">0.00 ₺</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-section">
+                        <h3 class="report-sec-title">3. Görev Listesi Detayları</h3>
+                        <table class="report-table">
+                            <thead>
+                                <tr>
+                                    <th>Görev Başlığı</th>
+                                    <th>Başlangıç - Bitiş</th>
+                                    <th>Sorumlu</th>
+                                    <th>Durum</th>
+                                    <th>İlerleme</th>
+                                    <th>Maliyet</th>
+                                </tr>
+                            </thead>
+                            <tbody id="report-tasks-tbody">
+                                <!-- Dynamic rows -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="report-section">
+                        <h3 class="report-sec-title">4. Ekip Üyeleri Kaynak Dağılımı</h3>
+                        <table class="report-table">
+                            <thead>
+                                <tr>
+                                    <th>Ekip Üyesi</th>
+                                    <th>Rolü</th>
+                                    <th>Atanmış Görev Sayısı</th>
+                                    <th>Toplam Maliyet Sorumluluğu</th>
+                                </tr>
+                            </thead>
+                            <tbody id="report-members-tbody">
+                                <!-- Dynamic rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project Methodology & FAQ Section -->
+            <section id="sec-project-info" class="content-section">
+                <div class="faq-container">
+                    <!-- Q1: Proje Nedir -->
+                    <div class="faq-card glass">
+                        <div class="faq-header">
+                            <span class="faq-number">01</span>
+                            <h3>FilmTakipAPI Projesi Nedir?</h3>
+                        </div>
+                        <div class="faq-body">
+                            <p><strong>FilmTakipAPI</strong>, kullanıcıların izledikleri veya izlemek istedikleri filmleri kaydetmelerini, puanlamalarını, yorum yapmalarını ve favorilerine eklemelerini sağlayan zengin içerikli bir film izleme/takip sistemidir.</p>
+                            <p>Arka planda PostgreSQL veritabanı ile C# ASP.NET Core 8 Web API teknolojilerini kullanmaktadır. Bu modül ise söz konusu projenin zamanlama, kaynak ve bütçe planlamasını gerçekleştirmek üzere geliştirilmiş özel bir entegre <strong>Proje Yönetim Sistemi (Project Management Tool)</strong> yazılımıdır.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q2: Hangi Prompt Girdiniz -->
+                    <div class="faq-card glass">
+                        <div class="faq-header">
+                            <span class="faq-number">02</span>
+                            <h3>Nasıl Bir Prompt Girdiniz? (Metodoloji)</h3>
+                        </div>
+                        <div class="faq-body">
+                            <p>Sistemin oluşturulmasında aşağıdaki yönlendirici prompt temeli kullanılmıştır:</p>
+                            <blockquote>
+                                <em>"FilmTakipAPI isimli bir projem var; bu proje ile Film takip sistemi yapmayı hedefliyorum. Projemin içeriğine uygun bir proje yönetim yazılımı (Jira, Trello, Microsoft Project vb.) yapmak istiyorum. Hangi yazılımın hangi özelliği benim projeme uygunsa onu ekleyelim. Bana uygun bir proje yönetim yazılımı oluştur."</em>
+                            </blockquote>
+                            <p>Bu doğrultuda, sektörün öncüsü üç yazılımdan şu özellikler sentezlenmiştir:</p>
+                            <ul>
+                                <li><strong>Trello (Kart ve Liste Esaslı Görünüm):</strong> Görevlerin kolayca izlenebilmesi ve durum takibi için Kanban Kartları altyapısı tercih edildi.</li>
+                                <li><strong>Jira (İlerleme Oranları ve Rol Takibi):</strong> Ekip üyelerinin rolleri, görevlerin yüzde cinsinden tamamlanma takibi ve genel ilerleme ortalamalarının ekrana dinamik olarak yansıtılması özellikleri entegre edildi.</li>
+                                <li><strong>Microsoft Project (Gantt, Kritik Yol, Bolluk ve Finans):</strong> Görevlerin birbirine olan bağımlılık ilişkileri (Predecessor), takvim bazlı Gantt Şemaları (göreve ve kişiye göre), <strong>Kritik Yol (Critical Path)</strong> analizi, <strong>Bolluk Süresi (Slack Time)</strong> hesaplamaları ve net bütçe / maliyet takibi özellikleri eklenmiştir.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Q3: Kritik Yol Nedir -->
+                    <div class="faq-card glass">
+                        <div class="faq-header">
+                            <span class="faq-number">03</span>
+                            <h3>Kritik Yol (Critical Path) Nedir?</h3>
+                        </div>
+                        <div class="faq-body">
+                            <p><strong>Kritik Yol</strong>, bir projenin tamamlanabilmesi için ardışık olarak bitirilmesi gereken, birbirine bağımlı en uzun görevler dizisidir. Bu yol üzerindeki herhangi bir görevin gecikmesi, <strong>projenin toplam bitiş tarihini doğrudan geciktirir</strong>.</p>
+                            <p>Kritik yol üzerinde yer alan görevlerin <strong>Bolluk Süresi sıfırdır</strong>. Bu sistemde, görevlerin bağımlılık ağacı (PredecessorId) ve tarih aralıkları taranarak en kritik görevler otomatik olarak tespit edilir ve dashboard üzerinde kırmızı renkle uyarılarak listelenir.</p>
+                        </div>
+                    </div>
+
+                    <!-- Q4: Bolluk Süresi Nedir -->
+                    <div class="faq-card glass">
+                        <div class="faq-header">
+                            <span class="faq-number">04</span>
+                            <h3>Bolluk Süresi (Slack / Float) Nedir?</h3>
+                        </div>
+                        <div class="faq-body">
+                            <p><strong>Bolluk Süresi (Slack Time / Float)</strong>, bir görevin kendisinden sonraki görevleri (ardılları) veya projenin genel bitiş tarihini <strong>geciktirmeden esnetilebileceği maksimum gün süresidir</strong>.</p>
+                            <p>Matematiksel olarak bir <em>t</em> görevinin bolluğu, ardıl görevlerinin en erken başlama tarihlerinin minimumu ile <em>t</em> görevinin bitiş tarihi arasındaki farktır. Eğer görevin ardılı yoksa, projenin en son biten görevinin tarihi (projenin bitiş tarihi) baz alınır:</p>
+                            <div class="formula">
+                                <code>Bolluk (Slack) = Min(Ardıl Görevlerin Başlangıç Tarihi) - Görevin Bitiş Tarihi</code>
+                            </div>
+                            <p>Kritik görevlerde bu süre 0'dır, dolayısıyla esneme payı yoktur. Kritik olmayan görevlerin ise kaç gün ertelenebileceği bu sayede kolayca görülür.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <!-- Task Modal (Add/Edit) -->
+    <div class="modal-overlay" id="modal-task">
+        <div class="modal-box glass">
+            <div class="modal-header">
+                <h3 id="task-modal-title">Yeni Görev Oluştur</h3>
+                <button class="close-btn" id="btn-close-task-modal">&times;</button>
+            </div>
+            <form id="form-task" class="custom-form">
+                <input type="hidden" id="task-id">
+                <div class="form-group">
+                    <label for="task-title">Görev Başlığı</label>
+                    <input type="text" id="task-title" required placeholder="örn: API Entegrasyonu">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="task-start">Başlangıç Tarihi</label>
+                        <input type="date" id="task-start" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-end">Bitiş Tarihi</label>
+                        <input type="date" id="task-end" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="task-status">Durum</label>
+                        <select id="task-status" required>
+                            <option value="To Do">Yapılacak (To Do)</option>
+                            <option value="In Progress">Devam Ediyor (In Progress)</option>
+                            <option value="Done">Tamamlandı (Done)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-progress">İlerleme Oranı (%)</label>
+                        <input type="number" id="task-progress" required min="0" max="100" placeholder="0 - 100">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="task-assignee">Sorumlu Ekip Üyesi</label>
+                        <select id="task-assignee">
+                            <option value="">Atanmamış</option>
+                            <!-- Dynamic -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-predecessor">Öncül Görev (Bağımlılık)</label>
+                        <select id="task-predecessor">
+                            <option value="">Yok (Bağımsız)</option>
+                            <!-- Dynamic -->
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="task-cost">Görev Maliyeti / Gideri (₺)</label>
+                    <input type="number" id="task-cost" required min="0" placeholder="örn: 5000">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btn-cancel-task">İptal</button>
+                    <button type="submit" class="btn btn-primary" id="btn-save-task">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Member Modal -->
+    <div class="modal-overlay" id="modal-member">
+        <div class="modal-box glass small-modal">
+            <div class="modal-header">
+                <h3>Yeni Ekip Üyesi Ekle</h3>
+                <button class="close-btn" id="btn-close-member-modal">&times;</button>
+            </div>
+            <form id="form-member" class="custom-form">
+                <div class="form-group">
+                    <label for="member-name">Adı Soyadı</label>
+                    <input type="text" id="member-name" required placeholder="örn: Canan Yılmaz">
+                </div>
+                <div class="form-group">
+                    <label for="member-role">Görevi / Rolü</label>
+                    <input type="text" id="member-role" required placeholder="örn: Frontend Developer">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btn-cancel-member">İptal</button>
+                    <button type="submit" class="btn btn-primary">Ekle</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Movie Modal (Add/Edit) -->
+    <div class="modal-overlay" id="modal-movie">
+        <div class="modal-box glass">
+            <div class="modal-header">
+                <h3 id="movie-modal-title">Yeni Film Ekle</h3>
+                <button class="close-btn" id="btn-close-movie-modal">&times;</button>
+            </div>
+            <form id="form-movie" class="custom-form">
+                <input type="hidden" id="movie-id">
+                <div class="form-group">
+                    <label for="movie-title">Film Başlığı</label>
+                    <input type="text" id="movie-title" required placeholder="örn: Interstellar">
+                </div>
+                <div class="form-group">
+                    <label for="movie-description">Açıklama / Özet</label>
+                    <textarea id="movie-description" required placeholder="Film konusu..." style="width: 100%; height: 100px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.06); padding: 12px; border-radius: var(--radius-sm); color:#ffffff; font-family:var(--font-main); font-size:13px; outline:none;"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="movie-year">Yayın Yılı</label>
+                        <input type="number" id="movie-year" required min="1800" max="2100" placeholder="örn: 2014">
+                    </div>
+                    <div class="form-group">
+                        <label for="movie-genre">Türü</label>
+                        <input type="text" id="movie-genre" required placeholder="örn: Bilim Kurgu">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="movie-image">Afiş Resim URL</label>
+                    <input type="text" id="movie-image" required placeholder="https://images.unsplash.com/... veya görsel adresi">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" id="btn-cancel-movie">İptal</button>
+                    <button type="submit" class="btn btn-primary" id="btn-save-movie">Kaydet</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>

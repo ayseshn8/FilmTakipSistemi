@@ -1,0 +1,40 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/FilmTakipAPI/css/style.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3T\u002BfUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"30934"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223T\u002BfUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Jun 2026 11:36:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FilmTakipAPI/css/style.hndzcp49gz.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hndzcp49gz"},{"Name":"integrity","Value":"sha256-3T\u002BfUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno="},{"Name":"label","Value":"_content/FilmTakipAPI/css/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"30934"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223T\u002BfUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Jun 2026 11:36:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FilmTakipAPI/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"39674"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Jun 2026 11:36:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FilmTakipAPI/index.wrivu4h13n.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wrivu4h13n"},{"Name":"integrity","Value":"sha256-zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo="},{"Name":"label","Value":"_content/FilmTakipAPI/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"39674"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Jun 2026 11:36:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FilmTakipAPI/js/app.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"42227"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Jun 2026 11:37:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/FilmTakipAPI/js/app.mo6mwby5oy.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\app.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mo6mwby5oy"},{"Name":"integrity","Value":"sha256-qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4="},{"Name":"label","Value":"_content/FilmTakipAPI/js/app.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"42227"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4=\u0022"},{"Name":"Last-Modified","Value":"Thu, 11 Jun 2026 11:37:11 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

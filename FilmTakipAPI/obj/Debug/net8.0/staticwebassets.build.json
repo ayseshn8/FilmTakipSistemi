@@ -1,0 +1,331 @@
+{
+  "Version": 1,
+  "Hash": "MzdL7yRPwXRw1mLHJ22VZJ5aS7ZWbu0A8Ux8tznjbpY=",
+  "Source": "FilmTakipAPI",
+  "BasePath": "_content/FilmTakipAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "FilmTakipAPI\\wwwroot",
+      "Source": "FilmTakipAPI",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\",
+      "BasePath": "_content/FilmTakipAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\css\\style.css",
+      "SourceId": "FilmTakipAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\",
+      "BasePath": "_content/FilmTakipAPI",
+      "RelativePath": "css/style#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hndzcp49gz",
+      "Integrity": "3T+fUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\index.html",
+      "SourceId": "FilmTakipAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\",
+      "BasePath": "_content/FilmTakipAPI",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wrivu4h13n",
+      "Integrity": "zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\js\\app.js",
+      "SourceId": "FilmTakipAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\",
+      "BasePath": "_content/FilmTakipAPI",
+      "RelativePath": "js/app#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mo6mwby5oy",
+      "Integrity": "qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\app.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "css/style.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30934"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3T+fUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2026 11:36:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3T+fUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno="
+        }
+      ]
+    },
+    {
+      "Route": "css/style.hndzcp49gz.css",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\css\\style.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30934"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3T+fUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2026 11:36:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hndzcp49gz"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3T+fUeWpLYENniOq1rWc0AL8kLLv5Be/nnsZvYwtnno="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39674"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2026 11:36:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo="
+        }
+      ]
+    },
+    {
+      "Route": "index.wrivu4h13n.html",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39674"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2026 11:36:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wrivu4h13n"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zC6/27fg9DZoWNaxqeAyzmirfh1/HbWFkIuNLu1grCo="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.js",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2026 11:37:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4="
+        }
+      ]
+    },
+    {
+      "Route": "js/app.mo6mwby5oy.js",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\wwwroot\\js\\app.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "42227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 11 Jun 2026 11:37:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mo6mwby5oy"
+        },
+        {
+          "Name": "label",
+          "Value": "js/app.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qqjfMGJueJe1ypKFV3Z6t4ArsVVYOdd5nGlPccL9rP4="
+        }
+      ]
+    }
+  ]
+}

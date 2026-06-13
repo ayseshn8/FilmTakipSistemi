@@ -1,0 +1,374 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\controllers\\projecttaskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\controllers\\projecttaskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\controllers\\budgetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\controllers\\budgetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\projectmanagement\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\projectmanagement\\budget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\controllers\\teammemberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\controllers\\teammemberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\migrations\\20260611083109_addprojectmanagementmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\migrations\\20260611083109_addprojectmanagementmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\projectmanagement\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\projectmanagement\\teammember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\projectmanagement\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\projectmanagement\\projecttask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\models\\favorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\models\\rating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\controllers\\ratingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\controllers\\commentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\migrations\\20260608194205_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\migrations\\20260608194205_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|c:\\users\\user\\source\\repos\\filmtakipapi\\filmtakipapi\\migrations\\20260609114113_addusercommentratingfavorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09C8E675-BFEB-4CCD-AA1D-39A931E322CA}|FilmTakipAPI\\FilmTakipAPI.csproj|solutionrelative:filmtakipapi\\migrations\\20260609114113_addusercommentratingfavorite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TeamMembersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\TeamMembersController.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Controllers\\TeamMembersController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\TeamMembersController.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Controllers\\TeamMembersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T08:41:45.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectTasksController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\ProjectTasksController.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Controllers\\ProjectTasksController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\ProjectTasksController.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Controllers\\ProjectTasksController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T08:36:00.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260611083109_AddProjectManagementModule.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Migrations\\20260611083109_AddProjectManagementModule.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Migrations\\20260611083109_AddProjectManagementModule.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Migrations\\20260611083109_AddProjectManagementModule.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Migrations\\20260611083109_AddProjectManagementModule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T08:31:09.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Budget.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\ProjectManagement\\Budget.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\ProjectManagement\\Budget.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\ProjectManagement\\Budget.cs",
+              "RelativeToolTip": "FilmTakipAPI\\ProjectManagement\\Budget.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T08:25:18.868Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TeamMember.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\ProjectManagement\\TeamMember.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\ProjectManagement\\TeamMember.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\ProjectManagement\\TeamMember.cs",
+              "RelativeToolTip": "FilmTakipAPI\\ProjectManagement\\TeamMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T08:24:03.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProjectTask.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\ProjectManagement\\ProjectTask.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\ProjectManagement\\ProjectTask.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\ProjectManagement\\ProjectTask.cs",
+              "RelativeToolTip": "FilmTakipAPI\\ProjectManagement\\ProjectTask.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T08:20:37.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Program.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Program.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Program.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAAAMYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T18:41:46.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BudgetsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\BudgetsController.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Controllers\\BudgetsController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\BudgetsController.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Controllers\\BudgetsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T08:42:48.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Favorite.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\Favorite.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Models\\Favorite.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\Favorite.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Models\\Favorite.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T11:26:46.438Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Rating.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\Rating.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Models\\Rating.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\Rating.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Models\\Rating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T11:24:11.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Models\\Movie.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\Movie.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T18:23:20.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\User.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\User.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T11:18:27.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T18:28:29.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20260609114113_AddUserCommentRatingFavorite.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Migrations\\20260609114113_AddUserCommentRatingFavorite.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Migrations\\20260609114113_AddUserCommentRatingFavorite.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Migrations\\20260609114113_AddUserCommentRatingFavorite.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Migrations\\20260609114113_AddUserCommentRatingFavorite.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T11:41:13.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Models\\Comment.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T11:22:29.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\appsettings.json",
+              "RelativeToolTip": "FilmTakipAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABpAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-08T18:36:59.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T11:46:45.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FavoritesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\FavoritesController.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Controllers\\FavoritesController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\FavoritesController.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Controllers\\FavoritesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T12:48:12.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Controllers\\MoviesController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Controllers\\MoviesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T18:48:18.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CommentsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\CommentsController.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Controllers\\CommentsController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\CommentsController.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Controllers\\CommentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T11:52:15.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RatingsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\RatingsController.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Controllers\\RatingsController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Controllers\\RatingsController.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Controllers\\RatingsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-09T12:46:02.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20260608194205_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Migrations\\20260608194205_InitialCreate.cs",
+              "RelativeDocumentMoniker": "FilmTakipAPI\\Migrations\\20260608194205_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\FilmTakipAPI\\FilmTakipAPI\\Migrations\\20260608194205_InitialCreate.cs",
+              "RelativeToolTip": "FilmTakipAPI\\Migrations\\20260608194205_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T19:42:06.359Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

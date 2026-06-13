@@ -1,0 +1,6 @@
+@FilmTakipAPI_HostAddress = http://localhost:5083
+
+GET {{FilmTakipAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
