@@ -1,18 +1,32 @@
-# Film Takip Sistemi API
+# 🎬 Film Takip Sistemi API
 
-Film ekleme, yorum yapma ve puanlama içeren Web API projesi.
+Bu proje, kullanıcıların film ekleyebildiği, yorum yapabildiği, puan verebildiği ve favori listesi oluşturabildiği bir Web API projesidir.
 
-## Teknolojiler
-- ASP.NET Core Web API
+---
+
+## 🚀 Kullanılan Teknolojiler
+
+- ASP.NET Core Web API (.NET 8)
 - Entity Framework Core
+- PostgreSQL / SQL Server
 - Swagger
 - C#
 
-## Özellikler
-- Film ekleme/silme/güncelleme
-- Kullanıcı sistemi
-- Yorum ve puanlama
-- Favori listesi
+---
 
-## Geliştirici
-Ayşe Şahin
+## 📌 Özellikler
+
+- 🎥 Film ekleme / silme / güncelleme
+- 👤 Kullanıcı yönetimi
+- ⭐ Film puanlama sistemi
+- 💬 Yorum yapma
+- ❤️ Favori listesi
+- 📊 Proje yönetim modülü
+
+---
+
+## 🔧 Kurulum
+
+1. Projeyi Visual Studio ile aç
+2. `appsettings.json` dosyasını kontrol et
+3. Migration çalıştır:
